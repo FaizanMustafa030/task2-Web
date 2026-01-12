@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+          
+        }
+        table{
+          text-align: left;
+        }
+        .submit{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <form>
+    <table border="1">
+        <tr>
+            <th>
+                <label for="name">Name</label>
+            </th>
+            <th><input type="text" id="name" placeholder="Enter name"></th>
+        </tr>
+        <tr>
+            <th><label for="email">Email</label></th>
+            <th><input type="email" id="email" placeholder="Enter email"></th>
+        </tr>
+        <tr>
+            <th><label for="phone">Phone No</label></th>
+            <th><input type="text" id="phone" placeholder="Enter phone number"></th>
+        </tr>
+        <tr>
+            <th><label for="arrival">Arrival date</label></th>
+            <th><input type="date" id="arrival" placeholder="Enter arrival date"></th>
+        </tr>
+        <tr>
+            <th>Room Type</th>
+            <td> 
+                <input type="radio" name="room" id="single"> <label for="single">Single</label>
+                <input type="radio" name="room" id="double"> <label for="double">Double</label>
+                <input type="radio" name="room" id="suite"> <label for="suite">Presedential Suite</label>
+            </td>
+        </tr>
+        <tr>
+            <th>Preferences</th>
+            <td>
+                <input type="checkbox" name="pref" id="non-smoking"> <label for="non-smoking">Non-Smoking Room</label>
+                <input type="checkbox" name="pref" id="internet"> <label for="internet">Internet</label>
+                <input type="checkbox" name="pref" id="firm-mattress"> <label for="firm-mattress">Firm Mattress</label>
+            </td>
+        </tr>
+        <tr>
+            <th>Method of Payment</th>
+            <td>
+                <select>
+                    <option value="cash">Cash</option>
+                    <option value="credit-card">Credit Card</option>
+                    <option value="debit-card">Debit Card</option>
+                    
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <th class="submit" colspan="2"><input type="submit" value="Submit"></th>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
